@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { useCart } from '../context/CartContext';
 import { FaTimes, FaTrash, FaWhatsapp, FaShoppingCart } from 'react-icons/fa';
 
@@ -39,17 +40,20 @@ const CartUI: React.FC<CartUIProps> = ({ isOpen, onClose }) => {
     onClose();
   };
 
-  return (
+  // Se document.body não existir (SSG/SSR), evitamos erro
+  if (typeof document === 'undefined') return null;
+
+  return createPortal(
     <>
       {/* Overlay Escuro */}
       <div 
-        className={`fixed inset-0 bg-black/80 backdrop-blur-sm z-[60] transition-opacity duration-300 ease-in-out ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+        className={`fixed inset-0 bg-black/80 z-[9998] transition-opacity duration-300 ease-in-out ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
         onClick={onClose}
         aria-hidden="true"
       />
 
       {/* Container Principal do Carrinho (Drawer) */}
-      <div className={`fixed top-0 right-0 h-full w-full md:w-[450px] bg-[#111111] shadow-2xl z-[70] flex flex-col transform transition-transform duration-300 ease-in-out border-l border-gray-800 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed top-0 right-0 h-screen min-h-screen w-full sm:w-[450px] z-[9999] bg-[#111111] shadow-2xl flex flex-col transform transition-transform duration-300 ease-in-out border-l border-gray-800 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         
         {/* Cabeçalho Fixo Vermelho */}
         <div className="flex-none flex items-center justify-between p-5 bg-red-600 text-white shadow-lg z-10">
@@ -148,7 +152,8 @@ const CartUI: React.FC<CartUIProps> = ({ isOpen, onClose }) => {
         </div>
         
       </div>
-    </>
+    </>,
+    document.body
   );
 };
 

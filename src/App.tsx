@@ -8,8 +8,9 @@ function App() {
   return (
     <CartProvider>
       <Helmet>
-        <title>SuperMax - Supermercado Online | Ofertas e Produtos</title>
-        <meta name="description" content="SuperMax oferece produtos de qualidade, promoções especiais e uma experiência moderna de compras online." />
+        <html lang="pt-BR" />
+        <title>SuperMax - Supermercado Online | Propriá-SE</title>
+        <meta name="description" content="SuperMax oferece produtos de qualidade, promoções especiais e a melhor experiência de compras online em Propriá e região." />
       </Helmet>
       <Header />
       <Home />

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "name": "Maçã Fuji",
+    "category": "Hortifruti",
+    "price": 3.5,
+    "discount": 10,
+    "image": "https://via.placeholder.com/150?text=Maçã"
+  },
+  {
+    "id": "2",
+    "name": "Banana Prata",
+    "category": "Hortifruti",
+    "price": 2.8,
+    "discount": 0,
+    "image": "https://via.placeholder.com/150?text=Banana"
+  },
+  {
+    "id": "3",
+    "name": "Picanha Bovina",
+    "category": "Açougue",
+    "price": 45.0,
+    "discount": 5,
+    "image": "https://via.placeholder.com/150?text=Picanha"
+  },
+  {
+    "id": "4",
+    "name": "Filé de Frango",
+    "category": "Açougue",
+    "price": 22.0,
+    "discount": 0,
+    "image": "https://via.placeholder.com/150?text=Filé+de+Frango"
+  },
+  {
+    "id": "5",
+    "name": "Pão Frances",
+    "category": "Padaria",
+    "price": 0.9,
+    "discount": 0,
+    "image": "https://via.placeholder.com/150?text=Pão+Frances"
+  },
+  {
+    "id": "6",
+    "name": "Croissant",
+    "category": "Padaria",
+    "price": 2.5,
+    "discount": 15,
+    "image": "https://via.placeholder.com/150?text=Croissant"
+  },
+  {
+    "id": "7",
+    "name": "Cerveja Pilsen 350ml",
+    "category": "Bebidas",
+    "price": 3.0,
+    "discount": 0,
+    "image": "https://via.placeholder.com/150?text=Cerveja"
+  },
+  {
+    "id": "8",
+    "name": "Suco de Laranja 1L",
+    "category": "Bebidas",
+    "price": 4.5,
+    "discount": 10,
+    "image": "https://via.placeholder.com/150?text=Suco+Laranja"
+  },
+  {
+    "id": "9",
+    "name": "Sabonete Líquido",
+    "category": "Higiene",
+    "price": 6.0,
+    "discount": 5,
+    "image": "https://via.placeholder.com/150?text=Sabonete"
+  },
+  {
+    "id": "10",
+    "name": "Shampoo 500ml",
+    "category": "Higiene",
+    "price": 12.0,
+    "discount": 0,
+    "image": "https://via.placeholder.com/150?text=Shampoo"
+  },
+  {
+    "id": "11",
+    "name": "Detergente Lava Roupas",
+    "category": "Limpeza",
+    "price": 8.0,
+    "discount": 20,
+    "image": "https://via.placeholder.com/150?text=Detergente"
+  },
+  {
+    "id": "12",
+    "name": "Água Mineral 500ml",
+    "category": "Limpeza",
+    "price": 1.5,
+    "discount": 0,
+    "image": "https://via.placeholder.com/150?text=Água"
+  }
+]

@@ -43,7 +43,7 @@ export default function FeaturedProducts() {
                   className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-xl transition-colors duration-300 flex justify-center items-center space-x-2"
                 >
                   <span className="text-xl leading-none">+</span>
-                  <span>Comprar</span>
+                  <span>Adicionar ao carrinho</span>
                 </button>
               </div>
             </div>

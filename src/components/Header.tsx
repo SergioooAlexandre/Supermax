@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
 import { FaShoppingCart, FaSearch, FaWhatsapp } from 'react-icons/fa';
+import CartUI from './CartUI';
 
 const Header: React.FC = () => {
   const { items } = useCart();
+  const [isCartOpen, setIsCartOpen] = useState(false);
   const totalQuantity = items.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
@@ -23,14 +25,14 @@ const Header: React.FC = () => {
           <button className="relative hover:text-red-500 transition-colors" aria-label="Buscar produtos">
             <FaSearch className="w-6 h-6" />
           </button>
-          <a href="/cart" className="relative hover:text-red-500 transition-colors" aria-label="Carrinho de compras">
+          <button onClick={() => setIsCartOpen(true)} className="relative hover:text-red-500 transition-colors" aria-label="Carrinho de compras">
             <FaShoppingCart className="w-6 h-6" />
             {totalQuantity > 0 && (
               <span className="absolute -top-2 -right-2 bg-red-600 text-white font-bold rounded-full text-xs w-5 h-5 flex items-center justify-center shadow-sm">
                 {totalQuantity}
               </span>
             )}
-          </a>
+          </button>
         </div>
         <button className="md:hidden hover:text-red-500 transition-colors" aria-label="Menu">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -41,6 +43,7 @@ const Header: React.FC = () => {
       <a href="https://wa.me/557999999999" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 bg-red-600 text-white rounded-full p-4 shadow-xl hover:bg-red-700 transition-all transform hover:scale-110 z-50 flex items-center justify-center" aria-label="WhatsApp SuperMax">
         <FaWhatsapp className="w-6 h-6" />
       </a>
+      <CartUI isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
     </header>
   );
 };

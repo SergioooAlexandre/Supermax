@@ -17,9 +17,9 @@ export default function Footer() {
             O supermercado inteligente, moderno e com os melhores preços. A sua compra do mês feita em minutos.
           </p>
           <div className="flex space-x-4">
-            <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-300 hover:bg-red-600 hover:text-white transition-all transform hover:-translate-y-1"><FaInstagram size={18} /></a>
-            <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-300 hover:bg-red-600 hover:text-white transition-all transform hover:-translate-y-1"><FaFacebookF size={18} /></a>
-            <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-300 hover:bg-red-600 hover:text-white transition-all transform hover:-translate-y-1"><FaTiktok size={18} /></a>
+            <a href="https://instagram.com/sergioooalexandre" target="_blank" rel="noopener noreferrer" title="Instagram @sergioooalexandre" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-300 hover:bg-red-600 hover:text-white transition-all transform hover:-translate-y-1"><FaInstagram size={18} /></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook - SuperMax Delivery" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-300 hover:bg-red-600 hover:text-white transition-all transform hover:-translate-y-1"><FaFacebookF size={18} /></a>
+            <a href="https://wa.me/5579998832814" target="_blank" rel="noopener noreferrer" title="WhatsApp" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-300 hover:bg-red-600 hover:text-white transition-all transform hover:-translate-y-1"><FaWhatsapp size={18} /></a>
           </div>
         </div>
 
@@ -29,11 +29,11 @@ export default function Footer() {
           <ul className="space-y-4 text-gray-400 font-medium">
             <li className="flex items-start space-x-3">
               <FaWhatsapp className="text-green-500 mt-1 flex-shrink-0" size={18} />
-              <a href="https://wa.me/557999999999" className="hover:text-red-500 transition">(79) 99999-9999</a>
+              <a href="https://wa.me/5579998832814" className="hover:text-red-500 transition">(79) 99883-2814</a>
             </li>
             <li className="flex items-start space-x-3">
               <FaMapMarkerAlt className="text-red-500 mt-1 flex-shrink-0" size={18} />
-              <span>Av. Central, 123 - Centro<br/>Propriá - Sergipe<br/>Área de entrega: Propriá e municípios vizinhos</span>
+              <span>Centro<br/>Propriá - SE<br/>Área de entrega: Propriá e região</span>
             </li>
             <li className="flex items-start space-x-3">
               <FaClock className="text-blue-400 mt-1 flex-shrink-0" size={18} />

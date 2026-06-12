@@ -32,7 +32,7 @@ const CartUI: React.FC<CartUIProps> = ({ isOpen, onClose }) => {
     message += `\n*Total: R$ ${total.toFixed(2).replace('.', ',')}*`;
     
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/5579999999999?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/5579998832814?text=${encodedMessage}`;
     
     window.open(whatsappUrl, '_blank');
     clearCart();

@@ -14,9 +14,9 @@ const Header: React.FC = () => {
         {/* Top Bar for WhatsApp / Contact info */}
         <div className="bg-red-700 py-1 px-4 text-xs font-semibold tracking-wider flex justify-between items-center hidden sm:flex">
           <span className="text-red-100">🛒 Compre online, receba em casa!</span>
-          <a href="https://wa.me/557999999999" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-white hover:text-red-200 transition">
+          <a href="https://wa.me/5579998832814" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-white hover:text-red-200 transition">
             <FaWhatsapp />
-            <span>(79) 99999-9999 - Atendimento WhatsApp</span>
+            <span>(79) 99883-2814 - Atendimento WhatsApp</span>
           </a>
         </div>
 
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
       </header>
 
       {/* Floating WhatsApp button */}
-      <a href="https://wa.me/557999999999" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-4 shadow-[0_4px_20px_rgba(34,197,94,0.5)] hover:bg-green-600 transition-all transform hover:-translate-y-2 hover:scale-110 z-40 flex items-center justify-center animate-bounce" aria-label="WhatsApp SuperMax">
+      <a href="https://wa.me/5579998832814" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-4 shadow-[0_4px_20px_rgba(34,197,94,0.5)] hover:bg-green-600 transition-all transform hover:-translate-y-2 hover:scale-110 z-40 flex items-center justify-center animate-bounce" aria-label="WhatsApp SuperMax">
         <FaWhatsapp className="w-7 h-7" />
       </a>
       

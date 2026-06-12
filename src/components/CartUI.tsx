@@ -49,7 +49,7 @@ const CartUI: React.FC<CartUIProps> = ({ isOpen, onClose }) => {
         aria-hidden="true"
       />
 
-      <div className={`fixed top-0 right-0 h-screen min-h-screen w-full sm:w-[480px] z-[9999] bg-[#111111] shadow-2xl flex flex-col transform transition-transform duration-300 ease-in-out border-l border-gray-800 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed top-0 right-0 h-[100dvh] max-h-[100dvh] w-full sm:w-[480px] z-[9999] bg-[#111111] shadow-2xl flex flex-col transform transition-transform duration-300 ease-in-out border-l border-gray-800 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         
         <div className="flex-none flex items-center justify-between p-6 bg-red-600 text-white shadow-lg z-10">
           <div className="flex items-center gap-3">
@@ -129,7 +129,7 @@ const CartUI: React.FC<CartUIProps> = ({ isOpen, onClose }) => {
         </div>
         
         {/* Rodapé Fixo */}
-        <div className="flex-none p-6 bg-[#111111] border-t border-gray-800 shadow-[0_-15px_40px_rgba(0,0,0,0.6)] z-10">
+        <div className="flex-shrink-0 sticky bottom-0 bg-[#111111] p-6 border-t border-gray-800 shadow-[0_-15px_40px_rgba(0,0,0,0.6)] z-10">
           <div className="bg-red-600/10 border border-red-600/30 rounded-xl p-5 mb-5 flex justify-between items-center shadow-inner">
             <span className="text-base font-bold text-red-500 uppercase tracking-widest">Total do Pedido</span>
             <span className="text-4xl font-black text-red-500 drop-shadow-md">R$ {total.toFixed(2).replace('.', ',')}</span>

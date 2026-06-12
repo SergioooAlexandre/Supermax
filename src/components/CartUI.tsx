@@ -79,13 +79,12 @@ const CartUI: React.FC<CartUIProps> = ({ isOpen, onClose }) => {
               <div key={item.id} className="flex bg-gray-900 rounded-xl overflow-hidden border border-gray-800 shadow-md relative group hover:border-gray-700 transition-colors">
                 
                 {/* Imagem do Produto Maior */}
-                <div className="w-32 sm:w-36 h-auto bg-white flex-shrink-0 flex items-center justify-center border-r border-gray-800 overflow-hidden">
+                <div className="w-28 sm:w-32 bg-white flex-shrink-0 flex items-center justify-center border-r border-gray-800 overflow-hidden">
                   {item.image ? (
                     <img 
                       src={item.image} 
                       alt={item.name} 
-                      className="w-full h-full object-contain" 
-                      style={{ padding: '12px', backgroundColor: 'white', objectFit: 'contain' }}
+                      className="w-full h-full object-cover" 
                     />
                   ) : (
                     <span className="text-5xl drop-shadow-md">🛍️</span>

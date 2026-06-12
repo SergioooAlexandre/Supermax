@@ -10,8 +10,8 @@ export default function Footer() {
         {/* Coluna 1: Marca e Endereço */}
         <div className="space-y-6">
           <div className="flex items-center space-x-3">
-            <div className="h-12 w-12 bg-red-600 rounded-full flex items-center justify-center text-white font-black text-lg">SM</div>
-            <span className="text-3xl font-extrabold tracking-tight">Super<span className="text-red-600">Max</span></span>
+            <div className="h-12 w-12 bg-[#dc2626] rounded-full flex items-center justify-center text-white font-black text-lg">SM</div>
+            <span className="text-3xl font-extrabold tracking-tight">Super<span className="text-[#dc2626]">Max</span> Delivery</span>
           </div>
           <p className="text-gray-400 leading-relaxed font-medium">
             O supermercado inteligente, moderno e com os melhores preços. A sua compra do mês feita em minutos.
